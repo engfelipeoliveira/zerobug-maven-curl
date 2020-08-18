@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com</groupId>
+  <artifactId>zerobug-maven-curl</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>curl-zerobug</id>
+						<phase>install</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>curl</executable>
+							<arguments>
+								<argument>-d</argument>
+								<argument>token=5db63b48744bb86a21154f28cfd4c446&amp;id_target=129&amp;id=11111114</argument>
+								<argument>-X</argument>
+								<argument>POST</argument>
+								<argument>https://zerobug.co/build.php</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>  
+  
+</project>
