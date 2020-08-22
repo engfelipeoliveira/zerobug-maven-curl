@@ -4,6 +4,11 @@
   <artifactId>zerobug-maven-curl</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+        <ZEROBUGUID>RTOfHaDYLUum7q8jUfDL1598117275</ZEROBUGUID>
+        <ZEROBUGTOKEN>831ef1fc793bade6f7bcfe7d089587b7</ZEROBUGTOKEN>
+    </properties>
+  
 <build>
 		<plugins>
 			<plugin>
@@ -20,11 +25,16 @@
 						<configuration>
 							<executable>curl</executable>
 							<arguments>
-								<argument>-d</argument>
-								<argument>token=5db63b48744bb86a21154f28cfd4c446&amp;id_target=129&amp;id=11111114</argument>
-								<argument>-X</argument>
+								<argument>-k</argument>
+								<argument>-u</argument>
+								<argument>${ZEROBUGUID}:${ZEROBUGTOKEN}</argument>
+								<argument>--request</argument>
 								<argument>POST</argument>
-								<argument>https://zerobug.co/build.php</argument>
+								<argument>-H</argument>
+								<argument>"Content-Type:application/json"</argument>
+								<argument>-d</argument>
+ 								<argument>&apos;{&quot;pit&quot;:&quot;130&quot;,&quot;targetid&quot;:&quot;JtLN%T2S9D7hrkcQ2Kls1598119872&quot;,&quot;ci&quot;:&quot;Azure&nbsp;DevOps&quot;,&quot;tipo&quot;:&quot;4&quot;}&apos;</argument>
+								<argument>https://zerobug.co/ScanTarget/</argument>
 							</arguments>
 						</configuration>
 					</execution>
