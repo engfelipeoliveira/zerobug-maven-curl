@@ -1,15 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com</groupId>
-  <artifactId>zerobug-maven-curl</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <properties>
-        <ZEROBUGUID>RTOfHaDYLUum7q8jUfDL1598117275</ZEROBUGUID>
-        <ZEROBUGTOKEN>831ef1fc793bade6f7bcfe7d089587b7</ZEROBUGTOKEN>
-    </properties>
-  
-<build>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com</groupId>
+	<artifactId>zerobug-maven-curl</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<ZEROBUGUID>RTOfHaDYLUum7q8jUfDL1598117275</ZEROBUGUID>
+		<ZEROBUGTOKEN>831ef1fc793bade6f7bcfe7d089587b7</ZEROBUGTOKEN>
+	</properties>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -33,7 +34,7 @@
 								<argument>-H</argument>
 								<argument>"Content-Type:application/json"</argument>
 								<argument>-d</argument>
- 								<argument>&apos;{&quot;pit&quot;:&quot;130&quot;,&quot;targetid&quot;:&quot;JtLN%T2S9D7hrkcQ2Kls1598119872&quot;,&quot;ci&quot;:&quot;Azure&nbsp;DevOps&quot;,&quot;tipo&quot;:&quot;4&quot;}&apos;</argument>
+								<argument>"{\"pit\":\"130\",\"targetid\":\"kM3Pyx*OmE*CMApA$VV*1598143663\",\"ci\":\"Apache Maven\",\"tipo\":\"2\"}"</argument>
 								<argument>https://zerobug.co/ScanTarget/</argument>
 							</arguments>
 						</configuration>
@@ -41,6 +42,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>  
-  
+	</build>
+
 </project>
