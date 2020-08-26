@@ -7,8 +7,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<ZEROBUGUID>RTOfHaDYLUum7q8jUfDL1598117275</ZEROBUGUID>
-		<ZEROBUGTOKEN>831ef1fc793bade6f7bcfe7d089587b7</ZEROBUGTOKEN>
+		<ZEROBUGUID>jr7Zr8CYUdKuwC5zwD2C1598449517</ZEROBUGUID>
+		<ZEROBUGTOKEN>800c35dac6c8a667509a84e3b0df9521</ZEROBUGTOKEN>
 	</properties>
 	<build>
 		<plugins>
@@ -34,7 +34,7 @@
 								<argument>-H</argument>
 								<argument>"Content-Type:application/json"</argument>
 								<argument>-d</argument>
-								<argument>"{\"pit\":\"130\",\"targetid\":\"kM3Pyx*OmE*CMApA$VV*1598143663\",\"ci\":\"Apache Maven\",\"tipo\":\"2\"}"</argument>
+								<argument>"{\"pit\":\"131\",\"targetid\":\"zaAUa8xYQxW@aXlmTOia1598450255\",\"ci\":\"Apache Maven\",\"tipo\":\"2\"}"</argument>
 								<argument>https://zerobug.co/ScanTarget/</argument>
 							</arguments>
 						</configuration>
