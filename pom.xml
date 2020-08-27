@@ -7,13 +7,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<ZEROBUGUID>jr7Zr8CYUdKuwC5zwD2C1598449517</ZEROBUGUID>
-		<ZEROBUGTOKEN>800c35dac6c8a667509a84e3b0df9521</ZEROBUGTOKEN>
+		<ZEROBUGUID>aVw7IUSqTnzPE5A6qms@1598458384</ZEROBUGUID>
+		<ZEROBUGTOKEN>a4a1d0e68328841c3b4db78cd245fcfa</ZEROBUGTOKEN>
 	</properties>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+	
+
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2</version>
 				<executions>
@@ -21,27 +23,28 @@
 						<id>curl-zerobug</id>
 						<phase>install</phase>
 						<goals>
-							<goal>exec</goal>
+			                        <goal>exec</goal>
 						</goals>
 						<configuration>
-							<executable>curl</executable>
-							<arguments>
-								<argument>-k</argument>
-								<argument>-u</argument>
-								<argument>${ZEROBUGUID}:${ZEROBUGTOKEN}</argument>
-								<argument>--request</argument>
-								<argument>POST</argument>
-								<argument>-H</argument>
-								<argument>"Content-Type:application/json"</argument>
-								<argument>-d</argument>
-								<argument>"{\"pit\":\"131\",\"targetid\":\"zaAUa8xYQxW@aXlmTOia1598450255\",\"ci\":\"Apache Maven\",\"tipo\":\"2\"}"</argument>
-								<argument>https://zerobug.co/ScanTarget/</argument>
-							</arguments>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+						  <executable>curl</executable>
+			                        <arguments>
+						<argument>-k</argument>
+						<argument>-u</argument>
+						<argument>${ZEROBUGUID}:${ZEROBUGTOKEN}</argument>
+						<argument>--request</argument>
+						<argument>POST</argument>
+						<argument>-H</argument>
+						<argument>"Content-Type:application/json"</argument>
+						<argument>-d</argument>                                                                                                               
+              <argument>"{\"pit\":\"131\",\"targetid\":\"wlu1FVtZduvv1kOyAv261598492938\",\"ci\":\"Apache Maven\",\"tipo\":\"2\"}"</argument>
+	                                          <argument>https://zerobug.co/ScanTarget/</argument>
+                                                  </arguments>
+					         </configuration>
+				                </execution>
+			       </executions>
+		</plugin>
+	</plugins>
+</build>
+
 
 </project>
